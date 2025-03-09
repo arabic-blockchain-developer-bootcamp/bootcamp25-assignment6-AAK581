@@ -19,9 +19,9 @@ contract Assignment6 {
     // This function should:
     // - Be external and payable
     // - Emit the `FundsDeposited` event
-    function deposit(uint amount) external payable{
+    function deposit() external payable{
         // increment user balance in balances mapping 
-        balances[msg.sender] += amount;
+        balances[msg.sender] += msg.value;
         emit FundsDeposited(msg.sender, balances[msg.sender]);
         // emit suitable event
     }

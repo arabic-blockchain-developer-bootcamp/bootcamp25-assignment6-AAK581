@@ -7,7 +7,7 @@ contract Assignment6 {
     event FundsDeposited(address indexed sender, uint amount);
     // 2. Declare an event called `FundsWithdrawn` with parameters: `receiver` and `amount`
     event FundsWithdrawn(address indexed receiver, uint amount);
-    // 3. Create a public mapping called `balances` to tracker users balances
+    // 3. Create a public maping called `balances` to tracker users balances
     mapping(address => uint) public balances;
     // Modifier to check if sender has enough balance
     modifier hasEnoughBalance(uint amount) {
